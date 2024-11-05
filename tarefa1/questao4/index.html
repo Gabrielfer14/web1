@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Facebrook</title>
+        <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <header>
+        <h1>Facebrook</h1>
+        <nav>
+            <ul>
+            <li><a href="friends.php">Friends</a></li>
+            <li><a href="messages.php">Messages</a></li>
+            <li><a href="about.php">About</a></li>
+            </ul>
+        </nav>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Login">
+        </form>
+        </header>
+        <aside>
+        <h2>Friends</h2>
+        <ul>
+            <li>
+            <a href="friend.php?id=jane">
+                <img src="photo.php?id=jane" alt="Jane Doe">Jane Doe
+            </a>
+            </li>
+            <li>
+            <a href="friend.php?id=louie">
+                <img src="photo.php?id=louie" alt="Louie Doe">Louie Doe
+            </a>
+            </li>
+            <li>
+            <a href="friend.php?id=mary">
+                <img src="photo.php?id=mary" alt="Mary Doe">Mary Doe
+            </a>
+            </li>
+        </ul>
+        </aside>
+        <section>
+        <h2>Who am I?</h2>
+        <img src="profile_photo.jpg" alt="Profile Photo of John Doe">
+        <p>Name: John Doe</p>
+        <p>Age: 29</p>
+        <p>Country: Portugal</p>
+        </section>
+        <section>
+        <h2>Posts</h2>
+        <article>
+            <h3>Something about life</h3>
+            <img src="image.php?id=24345" alt="Image for post 24345">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ultricies mi. Sed fermentum vitae sapien sed aliquam. Maecenas a.</p>
+            <p>Quisque porttitor mollis tellus, ac sollicitudin ipsum tempus quis. Phasellus sit amet.</p>
+            <footer>
+            <a href="comments.php?id=24345">Comments (54)</a>
+            <time datetime="2014-05-05">@May 5th 2014</time>
+            </footer>
+        </article>
+        <article>
+            <h3>Something about something else</h3>
+            <img src="image.php?id=23562" alt="Image for post 23562">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ultricies mi. Sed fermentum vitae sapien sed aliquam. Maecenas a.</p>
+            <p>Quisque porttitor mollis tellus, ac sollicitudin ipsum tempus quis. Phasellus sit amet.</p>
+            <footer>
+            <a href="comments.php?id=23562">Comments (12)</a>
+            <time datetime="2014-05-01">@May 1st 2014</time>
+            </footer>
+        </article>
+        </section>
+    </body>
+</html>

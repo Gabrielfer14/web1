@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label> Nome completo: <input type="text" name="Nome completo"> </label> 
+            <fieldset>
+                <legend>Idade</legend>
+                <label><input type="radio" name="idade" value="-18"> &lt;18</label>
+                <label><input type="radio" name="idade" value="19-35"> 19-35</label>
+                <label><input type="radio" name="idade" value="36-48"> 36-48</label>
+                <label><input type="radio" name="idade" value="+49"> &gt;49</label>
+            </fieldset>
+            <label> Profissão: <input type="text" name="Profissão"> </label>
+            <label> País:</label>
+            <select name="país">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Paraguai">Paraguai</option>
+                <option value="Uruguai">Uruguai</option>
+            </select>
+            <fieldset>
+                <legend>Interesses</legend>
+                <label><input type="checkbox" name="Interesses" value="Esportes"> Esportes</label>
+                <label><input type="checkbox" name="Interesses" value="Jogos"> Jogos</label>
+                <label><input type="checkbox" name="Interesses" value="Filmes"> Filmes</label>
+                <label><input type="checkbox" name="Interesses" value="Livros"> Livros</label>
+                <label><input type="checkbox" name="Interesses" value="Praia"> Praia</label>
+                <label><input type="checkbox" name="Interesses" value="Festas"> Festas</label>
+            </fieldset>
+            <label>
+                Como descobriu o site?:
+                <textarea name="Como descobriu o site?" cols="20" rows="5"></textarea>
+            </label>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
