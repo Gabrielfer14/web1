@@ -1,0 +1,172 @@
+header{ /* header e navegação */
+    background-color: black;
+    color: white;
+    padding: 1rem;
+  }
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.botoes{
+    display: flex;
+    gap: 1rem;
+}
+
+.titulo img{
+    width: 100px;
+    height: auto;
+}
+
+.logo-btn{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+  
+.logo-btn img{
+    margin-right: 8px; /* Espaço entre a logo e o texto */
+}
+  
+.logo-btn span{
+font-size: 16px;
+font-weight: bold;
+}
+
+.nav-links { /* dando beleza para os links de navegacao e botoes*/
+    color: white;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.Submit,
+.login{
+    background-color: #4C5FD5;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Submit{
+    background-color: black;
+}
+
+.titulo_secundario{ /*estilo da area logo abaixo do header*/
+    background-color: #dadbf1;
+    padding: 2rem 0rem;
+}
+
+.container{ /* area roxa eu acho, abaixo do header*/
+    max-width: 600px;
+    margin: 0 auto;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{ /*titulo*/
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media(min-width: 1024px){
+    .heading{
+        font-size: 4rem;
+    }
+}
+
+.barra-procura{ /* barra de pesquisa*/
+    position: relative;
+    max-width: 100%;
+}
+
+.search-input{
+    padding: 0.75rem;
+    width: 18rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding-right: 2.5rem;
+    font-size: 1rem;
+}
+
+.seta-procurar {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+
+.features { /* Estilos para a seção de funcionalidades e suas imagens */
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.feature-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px; /* espaço entre a imagem e o texto */
+  }
+  
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-item {
+    margin: 1rem 0;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para o rodapé */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+}
+
+.rodape img{ /* ajustar o tamanho da logo pq tava gigante*/
+    width: 20px;
+    height: auto;
+}
+
+.footer-features {
+    display: flex;
+    gap: 2rem; /* Espaço entre as features */
+}
+
+.feature-item h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.footer-copyright {
+    margin-left: auto;
+    text-align: right;
+    color: #aaa;
+    font-size: 0.8rem;
+}
