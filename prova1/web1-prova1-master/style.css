@@ -1,7 +1,7 @@
-header{ /* header e navegação */
+header{ /* header preto superior*/
     background-color: black;
     color: white;
-    padding: 1rem;
+    padding: 1.8rem;
   }
 
 nav{
@@ -10,14 +10,21 @@ nav{
     align-items: center;
 }
 
-.botoes{
+.titulo{
     display: flex;
-    gap: 1rem;
+    align-items: center;
 }
 
-.titulo img{
-    width: 100px;
-    height: auto;
+.titulo img{ /* ajustar tamanho da logo no titulo*/
+    width: 8rem;
+}
+
+.help-center {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    height: 25px;
+    font-size: 25px;
 }
 
 .logo-btn{
@@ -28,24 +35,9 @@ nav{
 }
   
 .logo-btn img{
-    margin-right: 8px; /* Espaço entre a logo e o texto */
+    margin-right: 8px; /* espaço entre a logo e o texto no titulo*/
 }
   
-.logo-btn span{
-font-size: 16px;
-font-weight: bold;
-}
-
-.nav-links { /* dando beleza para os links de navegacao e botoes*/
-    color: white;
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-
 .Submit,
 .login{
     background-color: #4C5FD5;
@@ -57,6 +49,7 @@ font-weight: bold;
 }
 
 .Submit{
+    border: 1px solid white;
     background-color: black;
 }
 
@@ -65,10 +58,10 @@ font-weight: bold;
     padding: 2rem 0rem;
 }
 
-.container{ /* area roxa eu acho, abaixo do header*/
+.container{ /* area roxa, abaixo do header*/
     max-width: 600px;
     margin: 0 auto;
-    height: 9rem;
+    height: 24rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,32 +69,30 @@ font-weight: bold;
 }
 
 .heading{ /*titulo*/
-    font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 @media(min-width: 1024px){
     .heading{
-        font-size: 4rem;
+        font-size: 7cqw;
     }
 }
 
 .barra-procura{ /* barra de pesquisa*/
     position: relative;
-    max-width: 100%;
+    max-width: 100%; 
 }
 
-.search-input{
-    padding: 0.75rem;
+.search-input{ /* barra de pesquisa tb*/
+    padding: 1.2rem;
     width: 18rem;
     border: 1px solid #000;
     border-radius: 4px;
-    padding-right: 2.5rem;
-    font-size: 1rem;
+    padding-right: 20rem;
+    font-size: 1.5rem;
 }
 
-.seta-procurar {
+.seta-procurar { /* estilo para seta da barra de pesquisa*/
     position: absolute;
     top: 50%;
     right: 0.75rem;
@@ -113,50 +104,43 @@ font-weight: bold;
 
 
 .features { /* Estilos para a seção de funcionalidades e suas imagens */
-    padding: 2rem;
-    text-align: center;
+    padding: 8rem;
     background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .feature-img {
-    width: 50px;
+    width: 90px;
     height: auto;
     margin-right: 10px; /* espaço entre a imagem e o texto */
   }
-  
-.features h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
 
 .feature-item {
     margin: 1rem 0;
 }
 
-.feature-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
 /* Estilo para o rodapé */
 footer {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #000000;
+    background-color: #000;
     color: white;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .rodape img{ /* ajustar o tamanho da logo pq tava gigante*/
-    width: 20px;
+    width: 25px;
     height: auto;
 }
 
 .footer-features {
     display: flex;
     gap: 2rem; /* Espaço entre as features */
+    flex-wrap: wrap;
 }
 
 .feature-item h3 {
@@ -165,8 +149,7 @@ footer {
 }
 
 .footer-copyright {
-    margin-left: auto;
-    text-align: right;
-    color: #aaa;
+    color: white;
     font-size: 0.8rem;
-}
+    text-align: left;
+  }
