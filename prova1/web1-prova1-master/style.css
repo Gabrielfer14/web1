@@ -1,14 +1,22 @@
-header{ /* header preto superior*/
+body { /* remove a barra branca ao redor do body*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+header { /* header preto superior*/
     background-color: black;
     color: white;
-    padding: 1.8rem;
-  }
+    padding: 1.1rem;
+}
 
-  nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 4.5rem;
 }
 
 .botoes {
@@ -41,43 +49,81 @@ header{ /* header preto superior*/
 }
   
 .logo-btn img{
-    margin-right: 8px; /* espaço entre a logo e o texto no titulo*/
+    border-right: 2px solid white;
+    margin-right: 8px;
+    padding-right: 15px;
 }
   
-.Submit,
-.login{
+/* Botão "Submit a request" */
+.Submit {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 0.8rem 2.0rem; /* Ajuste no padding para dar mais espaço ao texto */
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem; /* Aumenta o tamanho da fonte */
+    margin-right: 10px;
+    text-align: center;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+}
+
+/* Botão "Sign in" */
+.login {
     background-color: #4C5FD5;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    padding: 0.1rem 2.0rem; /* Ajuste no padding para dar mais espaço ao texto */
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
 }
 
-.Submit{
-    border: 1px solid white;
-    background-color: black;
+
+/* Efeito de hover para ambos os botões */
+.Submit:hover,
+.login:hover {
+    opacity: 0.9;
+}
+
+.Submit,
+.login {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Submit:hover {
+    background-color: white;
+    color: black;
+}
+
+.login:hover {
+    background-color: #3a4cb2;
 }
 
 .titulo_secundario{ /*estilo da area logo abaixo do header*/
     background-color: #dadbf1;
     padding: 2rem 0rem;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
 }
 
 .container{ /* area roxa, abaixo do header*/
     max-width: 600px;
     margin: 0 auto;
-    height: 24rem;
+    height: 21rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: monospace;
 }
 
 .heading{ /*titulo em cima da barra de pesquisa*/
     margin-bottom: 1rem;
     font-size: 4rem;
-    font-family: 'GT America Standard', sans-serif;
+    font-weight: lighter;
 }
 
 .barra-procura{ /* barra de pesquisa*/
@@ -105,28 +151,29 @@ header{ /* header preto superior*/
 }
 
 .features { /* Estilos para a seção de funcionalidades e suas imagens */
-    padding: 8rem 2rem; /* Adiciona espaçamento lateral */
+    padding: 9rem 11rem; /* Adiciona espaçamento */
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
     font-size: 1.5rem;
 }
 
 .feature-item {
     display: flex;
     align-items: flex-start; /* Alinha a imagem e o texto no topo */
-    gap: 1rem; /* Espaço entre a imagem e o texto */
+    gap: 2rem; /* Espaço entre a imagem e o texto */
     text-align: left;
 }
 
 .feature-text h3 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin: 0; /* Remove qualquer margem extra ao redor do título */
 }
+
 .feature-text p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .feature-img{
@@ -134,45 +181,47 @@ header{ /* header preto superior*/
     height: auto;
 }
 
-.feature.text{
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
 .learn-more {
     color: #4C5FD5;
     text-decoration: none;
     font-weight: bold;
     margin-top: 0.5rem;
+    font-weight: lighter;
 }
 
 /* Estilo para o rodapé */
 footer {
     background-color: #000;
     color: white;
-    padding: 2rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 12px;
-    gap: 2rem;
+    padding: 4.1rem 8rem;
+    font-size: 1.4rem;
+}
+
+.footer-item p{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 2px;
 }
 
 .rodape img{ /* ajustar o tamanho da logo pq tava gigante*/
-    width: 25px;
+    width: 35px;
     height: auto;
+}
+ 
+.rodape{
+    display: inline;
+    flex-direction: column;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    align-content: end;
+    font-weight: bold;
 }
 
 .footer-features {
     display: flex;
-    gap: 4rem;
-    flex-wrap: wrap;
-}
-
-.footer-copyright {
-    color: white;
-    font-size: 0.8rem;
-    text-align: left;
 }
 
 @media (max-width: 768px) { /*media querry para otimiuzacao em telas menores*/
@@ -198,5 +247,17 @@ footer {
     .footer-features {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-features {
+        gap: 13rem; /* Espaçamento maior para telas maiores */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-features {
+        gap: 2rem; /* Espaçamento menor para telas menores */
     }
 }
