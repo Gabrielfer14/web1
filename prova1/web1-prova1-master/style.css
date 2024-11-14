@@ -54,7 +54,7 @@ nav {
     padding-right: 15px;
 }
   
-/* Botão "Submit a request" */
+/* botão "Submit a request" */
 .Submit {
     color: white;
     background-color: black;
@@ -69,7 +69,7 @@ nav {
     white-space: nowrap; /* Evita que o texto quebre em várias linhas */
 }
 
-/* Botão "Sign in" */
+/* botão "Sign in" */
 .login {
     background-color: #4C5FD5;
     color: white;
@@ -83,7 +83,7 @@ nav {
 }
 
 
-/* Efeito de hover para ambos os botões */
+/* efeito de hover para ambos os botões */
 .Submit:hover,
 .login:hover {
     opacity: 0.9;
@@ -100,13 +100,13 @@ nav {
 }
 
 .login:hover {
-    background-color: #3a4cb2;
+    background-color: white;
 }
 
 .titulo_secundario{ /*estilo da area logo abaixo do header*/
     background-color: #dadbf1;
     padding: 2rem 0rem;
-    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    white-space: nowrap;
 }
 
 .container{ /* area roxa, abaixo do header*/
@@ -120,7 +120,7 @@ nav {
     font-family: monospace;
 }
 
-.heading{ /*titulo em cima da barra de pesquisa*/
+.heading{ /* titulo em cima da barra de pesquisa*/
     margin-bottom: 1rem;
     font-size: 4rem;
     font-weight: lighter;
@@ -150,8 +150,8 @@ nav {
     cursor: pointer;
 }
 
-.features { /* Estilos para a seção de funcionalidades e suas imagens */
-    padding: 9rem 11rem; /* Adiciona espaçamento */
+.features { /* estilos para a seção de funcionalidades e suas imagens */
+    padding: 9rem 11rem;
     background-color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -161,15 +161,15 @@ nav {
 
 .feature-item {
     display: flex;
-    align-items: flex-start; /* Alinha a imagem e o texto no topo */
-    gap: 2rem; /* Espaço entre a imagem e o texto */
+    align-items: flex-start;
+    gap: 2rem;
     text-align: left;
 }
 
 .feature-text h3 {
     font-size: 1.7rem;
     font-weight: bold;
-    margin: 0; /* Remove qualquer margem extra ao redor do título */
+    margin: 0;
 }
 
 .feature-text p {
@@ -189,8 +189,7 @@ nav {
     font-weight: lighter;
 }
 
-/* Estilo para o rodapé */
-footer {
+footer { /* depois de muito lutar para ajustar as partes do footer foi isso que consegui*/
     background-color: #000;
     color: white;
     display: flex;
@@ -210,7 +209,7 @@ footer {
     height: auto;
 }
  
-.rodape{
+.rodape{ 
     display: inline;
     flex-direction: column;
     color: white;
@@ -247,17 +246,5 @@ footer {
     .footer-features {
         flex-direction: column;
         align-items: center;
-    }
-}
-
-@media (min-width: 1024px) {
-    .footer-features {
-        gap: 13rem; /* Espaçamento maior para telas maiores */
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-features {
-        gap: 2rem; /* Espaçamento menor para telas menores */
     }
 }
